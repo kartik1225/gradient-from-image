@@ -4,10 +4,11 @@ const getGr = require("./getGr.js");
 
 module.exports ={
 	gr:(imgUrl)=>{
-
-		Vibrant.from("test.jpg").getPalette()
+		return Vibrant.from(imgUrl).getPalette()
 		  .then((palette) => {
-		  	console.log(getGr(palette.Vibrant._rgb))
+		  	 const clr =  getGr(palette.Vibrant._rgb);
+		  	 // console.log(clr);
+		  	 return clr;
 		  })
 	}
 }

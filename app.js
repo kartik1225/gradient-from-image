@@ -1,3 +1,6 @@
 const main = require("./main/main.js");
 
-main.gr();
+main.gr("test.jpg").then(r=>{
+	console.log(r);
+});
+
