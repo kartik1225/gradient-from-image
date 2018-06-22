@@ -1,8 +1,3 @@
-const Vibrant = require("node-vibrant");
+const main = require("./main/main.js");
 
-
-Vibrant.from('test.jpg').getPalette()
-  .then((palette) => console.log(palette))
-
-
-// ejs testing tempalte
+main.gr();
