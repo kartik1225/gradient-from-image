@@ -15,7 +15,7 @@ const grds = [];
 
 // gets clostest 
 const getgr = (rgb)=>{
-	  
+
     gradient.map((d,i)=>{
       d.colors.map(e=>{
         grds.push({index:i,rgb:hexToRgb(e)})
