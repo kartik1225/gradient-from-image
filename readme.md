@@ -7,7 +7,7 @@
 
 ## How to use? 
 
-	note: currently only works with promisies
+	note: currently only works with promises
 
 #### Javascript
 ```javascript

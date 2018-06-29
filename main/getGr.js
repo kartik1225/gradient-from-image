@@ -11,6 +11,19 @@ const hexToRgb = (hex) => {
     } : null;
 }
 
+// rgbToHex
+function componentToHex(c) {
+    var hex = c.toString(16);
+    return hex.length == 1 ? "0" + hex : hex;
+}
+
+function rgbToHex(rgb) {
+    let {r,g,b} = rgb;
+    return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+
+
 const grds = [];
 
 // gets clostest 
@@ -32,9 +45,25 @@ const getgr = (rgb)=>{
         return result;
       }
     })
+
     var min = close.reduce((iMax, x, i, gradient) => x < gradient[iMax] ? i : iMax, 0);
-      const final = gradient[grds[min].index]
-      return final.colors;
+
+      const matchClr = rgbToHex(grds[min].rgb).toUpperCase();
+
+      // urrange to the matched hex first
+      const final = []
+
+      gradient[grds[min].index].colors.map(d=>{
+        if(d === matchClr){
+          final.unshift(d)
+        }else{
+          final.push(d)
+        }
+      })
+
+
+
+      return final;
 }
 
 module.exports = getgr;
