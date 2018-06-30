@@ -9,7 +9,7 @@
 
 > note: currently only works with promises
 
-#### Javascript
+#### Basic usage
 ```javascript
 var grad = require("gradient-from-image")
 
