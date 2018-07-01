@@ -14,7 +14,7 @@ module.exports ={
 
 		  	let data = {
 		  		vibrant:grFunc.vibrantGr(),
-		  		relevent:grFunc.releventGr(),
+		  		relevant:grFunc.relevantGr(),
 		  		getTextClr:grFunc.getTextClr
 		  	}
 		  	return data;

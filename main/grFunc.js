@@ -22,7 +22,7 @@ module.exports = {
   		}
 
   	},
-  	releventGr:()=>{
+  	relevantGr:()=>{
   		const palette = this.palette;
 
 	  	let clrs = [];
