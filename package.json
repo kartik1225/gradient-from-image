@@ -1,6 +1,6 @@
 {
   "name": "gradient-from-image",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "get a beautiful gradient from image",
   "main": "index.js",
   "scripts": {
